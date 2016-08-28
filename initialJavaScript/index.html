@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jenn's Initial JavaScript Project</title>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h1 class="header">Jenn's Initial JavaScript Project</h1>
+</header>
+<body>
+<div  class="one" id="one">
+    <h2>To See or Not To See</h2>
+    <!--hide the background when a button is clicked.-->
+    <button type="button" id="button_1" onclick="document.getElementById('one').style.display='none'">-</button>
+</div>
+<div class="one">
+    <!--This should make things visible or not-->
+    <button type="button" id="button-open" onclick="document.getElementById('one').style.display='block'">+</button>
+</div>
+
+<div class="two">
+<h2>Time Check!</h2>
+    <button type="button" onclick="document.getElementById('time').innerHTML = Date()">Good Sir, May I have the time?</button>
+    <p id="time"></p>
+</div>
+
+<div class="three">
+    <h2>The answer to life, the universe and everything</h2>
+    <button type="button" id="answer" onclick="document.getElementById(42).innerHTML = '42' ">What is?</button>
+    <p id="42"></p>
+    </div>
+
+</body>
+</html>
